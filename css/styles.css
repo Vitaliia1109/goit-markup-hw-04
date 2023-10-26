@@ -320,19 +320,27 @@ img {
   gap: 24px;
 }
 
-.team-link-icon {
-  display: block;
-  background-color: #4d5ae5;
+.team-link-link {
   width: 40px;
   height: 40px;
+}
+
+.team-link-icon {
+  display: flex;
+  background-color: #4d5ae5;
   border-radius: 50%;
-  padding: 12px;
+  align-items: center;
+  justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link-icon:hover,
 .team-link-icon:focus {
   background-color: #404bbf;
+}
+
+.team-icon {
+  fill: #f4f4fd;
 }
 
 /*section portfolio*/
@@ -359,6 +367,8 @@ img {
 .portfolio-list-item {
   background-color: #ffffff;
   width: calc((100% - 24px * 2) / 3);
+  box-shadow: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-title {
@@ -382,11 +392,9 @@ img {
   border-right: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list-item:hover .card-text {
+.portfolio-list-item:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -401,7 +409,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 40px 32px 164px 32px;
+  padding: 40px 32px;
   color: #f4f4fd;
   font-size: 16px;
   font-weight: 400;
